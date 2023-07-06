@@ -1,13 +1,15 @@
 {
   "name": "lightest-modal",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "A simple & light modal package for react",
   "main": "dist/index.js",
   "style": "dist/index.css",
   "scripts": {
     "prepublish": "rm -rf ./dist && npm run build",
+    "prepublishwindows": "rmdir /s /q .\\dist & npm run buildwindows",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir dist && cp src/index.css dist/",
+    "buildwindows": "babel src --out-dir dist & copy src\\index.css dist\\",
     "babel-version": "babel --version"
   },
   "repository": {
@@ -27,8 +29,9 @@
     "react-dom": "*"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.5",
-    "@babel/core": "^7.22.5",
+    "@babel/cli": "^7.22.6",
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.2"
   },
