@@ -18,6 +18,8 @@
 }
 
 .modalContent {
+  margin-left: 20px;
+  margin-right: 20px;
   pointer-events: auto;
   width: fit-content;
   height: fit-content;
