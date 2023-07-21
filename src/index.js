@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './index.css'
 
 export default function Modal ({
+  label = 'Hello there!',
   children = null,
   showModal = false,
   closeModal,
@@ -82,7 +83,7 @@ export default function Modal ({
                 </div>
               </div>
               <div className='bodyFrame'>
-                <p>Lorem  ipsum dolor</p>
+                <p>{label}</p>
               </div>
             </div>
             )

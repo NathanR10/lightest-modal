@@ -1,6 +1,6 @@
 {
   "name": "lightest-modal",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "description": "A simple & light modal package for react",
   "main": "dist/index.js",
   "style": "dist/index.css",
